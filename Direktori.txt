@@ -1,0 +1,104 @@
+Direktori Mac OS :
+
+1. /Application
+Folder ini terdiri dari app, termasuk Mail, Kalender, Safari, dan lainnya. Aplikasi dalam folder ini juga muncul di Launchpad. Jika Anda mencoba menyeret app keluar dari folder Aplikasi, folder tidak dipindahkan; sebagai gantinya alias akan dibuat. Jika Anda ingin mencopot app, lihat Menginstal, memperbarui, dan mencopot app.
+
+2. /Library
+Folder ini terdiri dari fon, plug-in Internet, dan item lainnya yang digunakan oleh app yang tersedia untuk semua pengguna Mac Anda. Jangan gunakan folder ini untuk menyimpan file dan folder yang Anda buat. Namun, gunakan folder utama atau folder iCloud Drive (Desktop atau Dokumen).
+
+3. /Network
+Folder ini termasuk perangkat terkait jaringan, server, perpustakaan, dll
+
+4. /System
+Folder ini berisi sistem operasi macOS. Anda tidak dapat mengubah nama atau lokasi folder Sistem atau item di dalamnya.
+
+5. /Users
+Folder ini berisi folder utama semua orang yang diatur sebagai pengguna di Mac. Saat Anda telah masuk, ikon folder utama Anda terlihat seperti rumah, dan folder utama yang lain terlihat seperti folder umum. Jika Anda keluar dan orang lain masuk, folder utamanya akan terlihat seperti rumah. Folder pengguna juga berisi folder Bersama. Item di folder Bersama tersedia untuk siapa pun yang menggunakan Mac Anda.
+
+6. /Volumes
+Folder ini berisi perangkat dan volume yang diputar, baik virtual maupun neat, seperti hard disk, CD, DVD, DMG, dll.
+
+7. /bin (baca : binary)
+Direktori /bin berisikan program binner yang harus ada bila sistem yang dipasang dalam mode single-user. Aplikasi firefoc disimpan di direktori /usr/bin, lalu program penting dan utilitas lainnya seperti shell bash (#bin/bash) terletak di /bin.
+
+8. /home
+Semua direktori /home dari pengguna tersimpan di direktori ini dengan nama user masing-masing sebagai pengelompokannya. Untuk beberapa sistem linux yang di spesifikasikan untuk server, direktori pengguna masih dikelompokkan lagi kedalam /home/users. Di dalama direktori /home/nama-user tersimpan konfigurasi-konfigurasi yang spesifik terhadap user tersebut. Oleh karena itu, berbeda user, walaupun berada di sistem yang sama bisa mendapat lingkungan dan tampilan yang sama sekali berbeda. Direktori /home merupakan direktori yang paling “dekat” dengan user, dimana seluruh data yang Anda miliki bisa disimpan dalam direktori ini, mulai dari mp3, filem sampai dengan dokumen. Oleh karena itu, untuk membatasi agar file-file di pengguna tidak mendesak file-file system, sangat umum untuk meletakkan direktori /home di partisi yang terpisah. Hal ini dapat menahan file-file yang disimpan user hingga total ukuran tertentu tanpa mengganggu ruang gerak system.
+
+9. /tmp
+Folder /tmp digunakan untuk menyimpan file-file Temporary atau file-file sementara, dan secara otomatis hilang setelah kita Restart atau Mematikan Komputer.
+
+10. /var
+Biasanya berisi informasi seperti log system yang berada dalam /var/log. Direktori /var merupakan direktori yang isinya sangat dinamis. Jika digunakan didalam server, sangat dianjurkan /var ini untuk diletakkan di partisi terpisah dikarenan direktori /var dapat membengkak dengan sangat cepat. Selain itu juga, dengan direktori /var dibuat partisinya sendiri atau secara fisik ditentukan lokasinya, maka dapat mencegah internal fragmentasi, dan proses pencarian file tidak terlalu jauh, hanya seputar cylinder itu-itu saja.
+
+11. /etc
+Pada direktori inilah banyak tersimpan file-file konfigurasi yang pada umumnya bisa kamu edit sendiri menggunakan text editor.
+
+12. /opt
+Direcktory ini biasanya berisi paket software yang kamu install sendiri. Biasanya digunakan oleh software diluar repository distrotersebut.
+
+13. /dev        
+Merupakan directory yang isinya sebenarnya bukan benar-benar berisi file. Isi dari /dev ini berkaitan dengan perangkat-perangkat yang terdapat pada system. Misalkan untuk informasi port USB, port serial, port printer, dapat di berlakukan seperti membaca file. Misalkan perangkat serial terletak di /dev/tty01, kemudian partisi dalam harddisk di sebut sebagai /dev/sda6, dan lain sebagainya.
+
+14. /sbin
+Direktori /sbin mirip dengan /bin, Tetapi file-file yang berada di dalam direktori ini umum dioperasikan oleh Root. Berisi file-file biner yang esensinya untuk sistem dan mengendalikan sistem. File-file biner atau bisa dianggap aplikasi sistem ini jika dioperasikan secara tidak tepat bisa berpotensi merusak.
+
+15. /usr
+Pada folder /usr berisi file-file non-entitas yang terdapat pada dirctory /usr/bin, atau biasanya yang kita gunakan sebelumnya untuk menambah Themes, ataupun Icons (/usr/themes && /usr/icons).
+
+
+
+Direktori Linux :
+
+1. / (baca : root)
+Struktur direktori di Linux secara umum diawali dengan root filesystem “/” dan tentu juga merupakan root atau akar dari seluruh direktori global. Partisi dimana di letakkan / (root system) akan menjadi direktori sistem atau partisi pokok.
+
+2. /boot
+Direktori /boot tesimpan file-file boot loader diantaranya GRUB atau LILO. Kernel, initrd dan system.map juga terletak didalam /boot. Jika system yang digunakan menggunakan partisi LVM ataupun partisi dalam jaringan. Maka ada baiknya dibuatkan partisi kecil tersendiri untuk meletakkan /boot di harddisk dengan filesystem konvensional. /boot ini umumnya sangat jarang sekali berubah isinya, kecuali memang kita sering bermain-main dengan kernel.
+
+3. /sys (baca : system)
+Berisi informasi yang berkaitan dengan kernel, device dan firmware.
+
+4. /sbin (baca : super binary)
+Berisi file-file biner yang esensinya untuk sistem dan mengendalikan sistem. File-file biner atau bisa dianggap aplikasi sistem ini jika dioperasikan secara tidak tepat bisa berpotensi merusak.
+
+5. /bin (baca : binary)
+Berisi file-file binari atau aplikasi yang lebih umum dan dapat digunakan oleh semua user.
+
+6. /lib (baca : library)
+Berisi file-file library atau pustaka dari semua aplikasi binary yang tersimpan dalam direktori /sbin dan /bin. Di direktori ini juga tersimpan berbagai macam library yang digunakan untuk aplikasi lain. Konsep penggunaan library bersama ini membuat aplikasi di linux dapat menghemat ukuran.
+
+7. /dev (baca : device)
+Merupakan directory yang isinya sebenarnya bukan benar-benar berisi file. Isi dari /dev ini berkaitan dengan perangkat-perangkat yang terdapat pada system. Misalkan untuk informasi port USB, port serial, port printer, dapat di berlakukan seperti membaca file. Misalkan perangkat serial terletak di /dev/tty01, kemudian partisi dalam harddisk di sebut sebagai /dev/sda6, dan lain sebagainya.
+
+8. /etc
+Direktori /etc berisi file-file konfigurasi sistem. Mayoritas aplikasi dan layanan konfigurasinya tersimpan di direktori /etc termasuk diantaranya /etc/hosts, /etc/resolv.conf, /etc/wvdial.conf dan lain sebagainya. Nah bagi Anda yang sering berinternet ria pastilah tidak asing lagi dengan direktori /etc ini, apalagi yang pernah utak-atik koneksi internet via bluetooth handphone, masih ingat kan? Di direktori /etc/init.d tersimpan konfigurasi bagaimana sebuah layanan dijalankan. Di direktori /etc/rc*.d tersimpan konfigurasi untuk menentukan service yang dijalankan untuk tiap-tiap sesi init.
+
+9. /home
+Semua direktori /home dari pengguna tersimpan di direktori ini dengan nama user masing-masing sebagai pengelompokannya. Untuk beberapa sistem linux yang di spesifikasikan untuk server, direktori pengguna masih dikelompokkan lagi kedalam /home/users. Di dalama direktori /home/nama-user tersimpan konfigurasi-konfigurasi yang spesifik terhadap user tersebut. Oleh karena itu, berbeda user, walaupun berada di sistem yang sama bisa mendapat lingkungan dan tampilan yang sama sekali berbeda. Direktori /home merupakan direktori yang paling “dekat” dengan user, dimana seluruh data yang Anda miliki bisa disimpan dalam direktori ini, mulai dari mp3, filem sampai dengan dokumen. Oleh karena itu, untuk membatasi agar file-file di pengguna tidak mendesak file-file system, sangat umum untuk meletakkan direktori /home di partisi yang terpisah. Hal ini dapat menahan file-file yang disimpan user hingga total ukuran tertentu tanpa mengganggu ruang gerak system.
+
+10. /media
+Merupakan direktori untuk menyimpan direktori-direktori mount point. CD-ROM, DVD, flash disk, bahkan floppy disk juga akan termount di direktori ini. Pada distro-distro modern, sudah memberikan fasilitas untuk menampilkan device-device yang dimount ke depan Desktop. Sehingga pengguna tidak perlu repot-repot lagi untuk menuju ke /media untuk dapat mengakses flash disk-nya tapi cukup lihat ke desktop-nya dan masuk ke direktori yang terbuat baru di sana. Untuk workstation yang terintegrasi dengan jaringan, pada umumnya untuk melakukan mounting storage network juga diletakkan di /media. Dengan dikelompokkan seperti itu maka mudah untuk mengenali bahwa semua yang berada di dalam /media merupakan media penyimpan.
+
+11. /mnt (baca : mount)
+Pada Linux yang masih umum menggunakan kernel 2.4.x. Untuk tempat mengumpulkan mount point berada di /mnt. Dikarenakan pada sistem berbasis kernel 2.6.x sudah menggunakan /media, maka /mnt ini umumnya kosong. /mnt bisa juga dijadikan mount point pada saat system rescue atau troubleshooting. Contoh penggunaan partisi ini adalah pada kasus membuat repository lokal Ubuntu dari file iso (*.iso)
+
+12. /opt (baca : optional)
+Beberapa paket software terpisah menggunakan direktori ini untuk menyimpan paket yang tidak menuju ke lokasi manapun, dan biasanya digunakan untuk paket proprietari, atau paket aplikasi yang langsung menyertakan binari yang bisa langsung dieksekusi.
+
+13. /usr (baca : user)
+Sebuah sub-hirarki dari root filesistem di simpan didalam /usr. Didalam /usr tersimpan aplikasi dan utiliti yang spesifik dengan user. Jika kita melihat kedalam direktori /usr maka kita juga akan menemukan direktori yang mirip dengan di / yaitu bin, sbin dan lib. Hanya saja, aplikasi dan librari yang terletak /usr tidak terlalu kritikal untuk sistem. Untuk istilah mudahnya, /usr merupakan tempat dimana user menginstall aplikasi sendiri yang bukan official dari distro. Jika pengguna termasuk orang yang sering menambah-nambah aplikasi sendiri diluar bawaan paket yang disediakan untuk distro itu, maka direktori /usr sudah dipastikan akan cepat sekali membengkak. Ada baiknya untuk sistem yang penggunanya seperti itu, /usr di berikan partisi sendiri. Untuk aplikasi yang bisa langsung dijalankan, sistem linux akan membaca secara bersamaan yang ada di /bin dan di /usr/bin begitu juga untuk /sbin dan /usr/sbin.
+
+14. /root
+Merupakan direktori home-nya superuser (root). Harap jangan bingung dengan direktori root (/). Walaupun cara menyebutnya sama, tapi sama sekali berfungsi sangat berbeda. (piss)
+
+15. /var (baca : variative)
+Direktori /var merupakan direktori yang isinya sangat dinamis. Jika digunakan didalam server, sangat dianjurkan /var ini untuk diletakkan di partisi terpisah dikarenan direktori /var dapat membengkak dengan sangat cepat. Selain itu juga, dengan direktori /var dibuat partisinya sendiri atau secara fisik ditentukan lokasinya, maka dapat mencegah internal fragmentasi, dan proses pencarian file tidak terlalu jauh, hanya seputar cylinder itu-itu saja.
+
+16. /proc (baca : process)
+Direktori /proc juga merupakan pseudo filesystem yang mirip dengan /dev. Bedanya, /proc ini murni hanya berkaitan dengan sistem dan tidak menyangkut pada device. Jika kita melakukan pengecekan ukuran penggunaan space, jangan terkecoh dengan direktori /proc yang tercatat menunjukkan memakan space sangat besar. Segala macam space yang tertulis disitu sama sekali tidak terdapat di dalam media penyimpanan harddisk. Jadi direktori /proc sebenarnya tidak ada sama sekali. Isi dari /proc ini adalah infomasi dari sistem.
+
+17. /tmp (baca : temporary)
+Merupakan file sistem yang menyimpan file-file sementara. Beberapa distro akan otomatis membersihkan isi dari /tmp sewaktu reboot. Direktori /tmp memiliki mode yang sangat terbuka sehingga mudah untuk ditulisi oleh siapa saja. Didalam /var/tmp juga digunakan sebagai penyimpanan file-file sementara, bedanya /var/tmp dengan /tmp yaitu /var/tmp tidak akan dibersihkan saat system reboot.
+
+18. /lost+found
+Di direktori ini linux menyimpan file-file yang berhasil di recover saat sistem crash. Dengan melihat kedalam /lost+found mungkin kita dapat menemukan file yang hilang.
